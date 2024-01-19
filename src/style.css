@@ -1,0 +1,30 @@
+@font-face {
+  font-family: clock;
+  src: url(./assets/clockicons.ttf);
+}
+
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.89);
+  background-color: #333;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  width: 100%;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.89);;
+  }
+}
