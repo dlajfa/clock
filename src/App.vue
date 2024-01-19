@@ -32,7 +32,7 @@
 <template>
 
   <div>
-    {{ hours }}:{{ minutes }}:{{ seconds }}
+    {{ hours }}:{{ minutes }}<span class="large-screen-only">:{{ seconds }}</span>
   </div>
 
 </template>
@@ -42,9 +42,19 @@
 <style>
 
   div {
-    font-size: 20vw;
+    font-size: 22vw;
     font-weight: 900;
     font-family: clock, monospace;
+  }
+
+  @media screen and (max-width: 600px) {
+    div {
+      font-size: 30vw;
+    }
+    
+    .large-screen-only {
+      display: none;
+    }
   }
 
 </style>
