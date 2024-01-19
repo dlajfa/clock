@@ -1,2 +1,2 @@
 # clock
-A digital clock built with vue.js
+A responsive digital clock built with vue.js.
