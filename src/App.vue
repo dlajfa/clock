@@ -31,8 +31,12 @@
 
 <template>
 
-  <div>
-    {{ hours }}:{{ minutes }}<span class="large-screen-only">:{{ seconds }}</span>
+  <div class="time">
+    <span>{{ hours }}</span>
+    <span class="separator">:</span>
+    <span>{{ minutes }}</span>
+    <span class="separator large-screen-only">:</span>
+    <span class="large-screen-only">{{ seconds }}</span>
   </div>
 
 </template>
@@ -41,17 +45,26 @@
 
 <style>
 
-  div {
-    font-size: 18vw;
-    font-family: clock, monospace;
+  div.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20vw;
+    font-weight: 900;
+    font-family: Helvetica, sans-serif;
+  }
+
+  span.separator {
+    position: relative;
+    bottom: 1.5vw;
   }
 
   @media screen and (max-width: 600px) {
-    div {
+    div.time {
       font-size: 30vw;
     }
 
-    .large-screen-only {
+    span.large-screen-only {
       display: none;
     }
   }
