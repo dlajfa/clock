@@ -60,6 +60,10 @@
   }
 
   @media screen and (max-width: 600px) {
+    #app {
+      margin-bottom: 50%;
+    }
+
     div.time {
       font-size: 30vw;
     }
