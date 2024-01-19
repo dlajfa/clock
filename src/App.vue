@@ -42,8 +42,7 @@
 <style>
 
   div {
-    font-size: 22vw;
-    font-weight: 900;
+    font-size: 18vw;
     font-family: clock, monospace;
   }
 
@@ -51,7 +50,7 @@
     div {
       font-size: 30vw;
     }
-    
+
     .large-screen-only {
       display: none;
     }
